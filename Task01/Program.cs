@@ -1,0 +1,16 @@
+﻿// Напишите программу, которая на вход принимает два числа и проверяет, является ли первое число квадратом второго.
+
+Console.Write("Введите целое число: ");
+int a = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Введите второе целое число: ");
+int b = Convert.ToInt32(Console.ReadLine());
+
+if (a == b * b)
+{
+  Console.WriteLine($"Квадрат числа (b) = (a) -> Да");
+}
+else
+{
+  Console.WriteLine($"Квадрат числа (b) не равняется(a) -> Нет");
+}
