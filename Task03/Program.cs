@@ -2,39 +2,38 @@
 // 3 -> Среда
 // 5 -> Пятница
 
-Console.Write("Введите целое число: ");
+Console.Write("Введите номер дня недели: ");
 
-int a = Convert.ToInt32(Console.ReadLine());
-
-if (a == 1)
+string day = Console.ReadLine();
+if (day == "1")
 {
-  Console.WriteLine($"По номеру {a} - Понедельник");
+  Console.WriteLine("Понедельник");
 }
-if (a == 2)
+else if (day == "2")
 {
-  Console.WriteLine($"По номеру {a} - Вторник");
+  Console.WriteLine("Вторник");
 }
-if (a == 3)
+else if (day == "3")
 {
-  Console.WriteLine($"По номеру {a} - Среда");
+  Console.WriteLine("Среда");
 }
-if (a == 4)
+else if (day == "4")
 {
-  Console.WriteLine($"По номеру {a} - Четверг");
+  Console.WriteLine("Четверг");
 }
-if (a == 5)
+else if (day == "5")
 {
-  Console.WriteLine($"По номеру {a} - Пятница");
+  Console.WriteLine("Пятница");
 }
-if (a == 6)
+else if (day == "6")
 {
-  Console.WriteLine($"По номеру {a} - Суббота");
+  Console.WriteLine("Суббота");
 }
-if (a == 7)
+else if (day == "7")
 {
-  Console.WriteLine($"По номеру {a} - Воскресенье");
+  Console.WriteLine("Воскресенье");
 }
-if (a > 7)
+else
 {
-  Console.WriteLine($"По номеру {a} - Нет дня недели");
+  Console.WriteLine(" Нет дня недели");
 }
