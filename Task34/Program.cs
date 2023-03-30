@@ -4,6 +4,12 @@
 // [345, 897, 568, 234] -> 2
 
 
+int[] array = CreateArrayRndInt(4, 99, 1000);
+PrintArray(array);
+Console.WriteLine();
+int eventNum = EventNumbers(array);
+Console.WriteLine($"Количество чётных чисел в масиве -> {eventNum}");
+
 int[] CreateArrayRndInt(int size, int min, int max)
 {
   int[] arr = new int[size];
@@ -36,9 +42,3 @@ int EventNumbers(int[] arr)
   }
   return count;
 }
-
-int[] array = CreateArrayRndInt(4, 99, 1000);
-PrintArray(array);
-Console.WriteLine();
-int eventNum = EventNumbers(array);
-Console.WriteLine($"Количество чётных чисел в масиве -> {eventNum}");
